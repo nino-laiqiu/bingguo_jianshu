@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.9MySQL-2</title>
+    <style type="text/css" media="all">
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #777;
+        background-color: white;
+      }
+      .container {
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .post {
+        font-family: Georgia, "Times New Roman", Times, "SimSun", serif;
+        position: relative;
+        padding: 70px;
+        bottom: 0;
+        overflow-y: auto;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #515151;
+      }
+
+      .post h1{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 40px;
+        color: inherit;
+      }
+
+      .post p {
+        margin: 0 0 35px 0;
+      }
+
+      .post img {
+        border: 1px solid #D9D9D9;
+      }
+
+      .post a {
+        color: #28A1C5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <h1 class="title">7.9MySQL-2</h1>
+        <div class="show-content">
+          <p>1.建表和列类型有什么关系</p><p>建表的过程就是声明字段。存储相同的数据，不同的列类型所占据的空间和效率是不一样的。</p><p>2.MySQL三大列类型</p><p>数值型（整型 小数）在列类型后加unsigned表示其为无符号类型  zerofill(M)是unsigned类型<br></p><div class="image-package"><img name="CDCFE54B-AEB8-4E5F-9468-4E49CCF961D4.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-3c65b0b72d6c99af.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-3c65b0b72d6c99af.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-3c65b0b72d6c99af.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p>3.char varchar的区别（限制的是字符而不是字节）<br></p><div class="image-package"><img name="7A9E4D95-155B-4E13-9197-3581723E1501.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-cf14b3311d73cbea.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-cf14b3311d73cbea.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-cf14b3311d73cbea.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p>4.如何选取合适的列类型？<br></p><div class="image-package"><img name="71B95E60-13CA-455F-B866-4DA33CF21326.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-6638e0ff11413b3a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-6638e0ff11413b3a.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-6638e0ff11413b3a.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p>时间效率和空间节约的矛盾</p><p>5.表格的增删改</p><p><br></p><div class="image-package"><img name="4EB712A1-A53E-447E-8252-0E828316429F.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-3143c1f79f9dfd33.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-3143c1f79f9dfd33.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-3143c1f79f9dfd33.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><div class="image-package"><img name="6A3444C7-18A9-4464-B2F1-189B2D20FDB2.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-b9a3849dc2fa6bac.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-b9a3849dc2fa6bac.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-b9a3849dc2fa6bac.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p>alter table 表名 add/change/modify/modify</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.23Java-8</title>
+    <style type="text/css" media="all">
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #777;
+        background-color: white;
+      }
+      .container {
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .post {
+        font-family: Georgia, "Times New Roman", Times, "SimSun", serif;
+        position: relative;
+        padding: 70px;
+        bottom: 0;
+        overflow-y: auto;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #515151;
+      }
+
+      .post h1{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 40px;
+        color: inherit;
+      }
+
+      .post p {
+        margin: 0 0 35px 0;
+      }
+
+      .post img {
+        border: 1px solid #D9D9D9;
+      }
+
+      .post a {
+        color: #28A1C5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <h1 class="title">7.23Java-8</h1>
+        <div class="show-content">
+          <p>1.内存图</p><p><br></p><div class="image-package"><img name="4DE680AE-101F-467C-A199-D256FED32B28.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-b546f70456249da5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-b546f70456249da5.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-b546f70456249da5.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><div class="image-package"><img name="45C84C2D-ECB8-4123-B905-2FCAFE785725.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-619138dd6d4ea557.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-619138dd6d4ea557.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-619138dd6d4ea557.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><div class="image-package"><img name="0DC2FB53-C307-48A6-A460-E5E21F7A0605.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-3829eb4a7098e2c2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-3829eb4a7098e2c2.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-3829eb4a7098e2c2.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><div class="image-package"><img name="02933C35-255E-4128-BE66-D7451E30E58F.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-c3dfbd02a41def54.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-c3dfbd02a41def54.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-c3dfbd02a41def54.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><p><br></p><p>2.成员变量和局部变量<br></p><div class="image-package"><img name="7E70BB1B-1341-4841-A419-DA19F3D939C1.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-3c9bb87e928483ad.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-3c9bb87e928483ad.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-3c9bb87e928483ad.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><div class="image-package"><img name="AE29C242-3653-4C35-B58F-349B0EC8888F.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-f11987d723c75f73.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-f11987d723c75f73.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-f11987d723c75f73.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><p><br></p><p><br></p><p></p><p>3.封装性<br></p><div class="image-package"><img name="045B45AD-EFA5-4F94-BA8A-7A32FF4F6F54.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-38c655ec3da9c4f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-38c655ec3da9c4f6.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-38c655ec3da9c4f6.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><p></p><p>4.private关键字定义<br></p><div class="image-package"><img name="FF7A8208-7748-4F0F-AD62-3A3A10509B7B.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-af22f61654c7c386.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-af22f61654c7c386.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-af22f61654c7c386.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><div class="image-package"><img name="99A7B74F-7E35-4805-904F-A7AC04FA4CD0.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-94f6e0d577f2ea16.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-94f6e0d577f2ea16.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-94f6e0d577f2ea16.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><p></p><p>5.练习使用private<br></p><div class="image-package"><img name="FACF2929-A1D9-47D6-A2D0-EE3F9E144E20.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-3524e4c9144d66b9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-3524e4c9144d66b9.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-3524e4c9144d66b9.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><div class="image-package"><img name="66CE20C3-09A3-44BA-BD69-BCB331EBDD47.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-6a59a9f6e2e98ace.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-6a59a9f6e2e98ace.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-6a59a9f6e2e98ace.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

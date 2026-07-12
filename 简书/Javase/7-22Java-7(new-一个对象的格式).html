@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.22Java-7(new 一个对象的格式)</title>
+    <style type="text/css" media="all">
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #777;
+        background-color: white;
+      }
+      .container {
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .post {
+        font-family: Georgia, "Times New Roman", Times, "SimSun", serif;
+        position: relative;
+        padding: 70px;
+        bottom: 0;
+        overflow-y: auto;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #515151;
+      }
+
+      .post h1{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 40px;
+        color: inherit;
+      }
+
+      .post p {
+        margin: 0 0 35px 0;
+      }
+
+      .post img {
+        border: 1px solid #D9D9D9;
+      }
+
+      .post a {
+        color: #28A1C5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <h1 class="title">7.22Java-7(new 一个对象的格式)</h1>
+        <div class="show-content">
+          <p>1.面对对象思想概述<br></p><div class="image-package"><img name="AD424A29-1852-401F-9261-CC922F1F7EDD.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-0e24031ee5220669.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-0e24031ee5220669.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-0e24031ee5220669.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><div class="image-package"><img name="4110DF3B-C62E-4F86-B71A-F4768AA31746.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-9d18d8cc79f9c2c1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-9d18d8cc79f9c2c1.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-9d18d8cc79f9c2c1.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p>2.类与对象<br></p><div class="image-package"><img name="B6CAD45B-7BB5-4310-92E6-CC78D2A6AF23.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-547a90878912da82.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-547a90878912da82.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-547a90878912da82.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><div class="image-package"><img name="A8ADF473-B5EC-4A71-A328-054A1208AFD6.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-d1632d79dce15c82.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-d1632d79dce15c82.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-d1632d79dce15c82.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><div class="image-package"><img name="AC2A8D24-E7B8-4122-8B22-891D0189463E.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-4d69bfea57cfb683.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-4d69bfea57cfb683.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-4d69bfea57cfb683.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><div class="image-package"><img name="66A89166-72A5-4E83-8D9B-A83EE8205613.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-59b38f62c9b1139e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-59b38f62c9b1139e.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-59b38f62c9b1139e.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><div class="image-package"><img name="A1D4E7DD-6F7C-4B8F-9BF2-053F3A30B2DD.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-b17d4da430b99af1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-b17d4da430b99af1.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-b17d4da430b99af1.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><div class="image-package"><img name="E8CFD267-43B0-40F8-93B4-53B1E867A53C.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-e98f7227df6f49d8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-e98f7227df6f49d8.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-e98f7227df6f49d8.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><p></p><p>3.一个对象的内存图<br></p><div class="image-package"><img name="9661130B-8121-45F9-A733-7CBFF2815321.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-29eeadc22b18e792.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-29eeadc22b18e792.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-29eeadc22b18e792.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+hbase集群的一个region server挂掉了，导致kylin构建的cube数据无法load到hbase中，为什么region server会挂掉？原因在于region太多元数据信息太多，region server 扛不住挂掉了
+解决方案是直接重启就ok了，但是重启的时候由发生了一个问题：元数据太多导致重启缓慢，导致在重启的过程中tablenotfound，并且昨天构建的数据也是无法查询的，原因在于元数据的同步问题，这个重启导致了之前没有更新元数据的cube也无法查询了，线上直接无数据no data 
+由于hbase无法容灾，理解成hbase为一张表，这个表挂掉了，就无法查询了，解决方案：要定期清理region，为重要的应用服务单独起一个集群
+

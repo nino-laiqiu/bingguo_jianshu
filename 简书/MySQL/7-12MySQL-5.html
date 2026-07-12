@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.12MySQL-5</title>
+    <style type="text/css" media="all">
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #777;
+        background-color: white;
+      }
+      .container {
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .post {
+        font-family: Georgia, "Times New Roman", Times, "SimSun", serif;
+        position: relative;
+        padding: 70px;
+        bottom: 0;
+        overflow-y: auto;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #515151;
+      }
+
+      .post h1{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 40px;
+        color: inherit;
+      }
+
+      .post p {
+        margin: 0 0 35px 0;
+      }
+
+      .post img {
+        border: 1px solid #D9D9D9;
+      }
+
+      .post a {
+        color: #28A1C5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <h1 class="title">7.12MySQL-5</h1>
+        <div class="show-content">
+          <p>1.子查询陷阱</p><p>group order 顺序问题（先分组后排序）</p><p><br></p><h1>子查询</h1><p>2.where型：</p><p>把内层查询的结果作为外层查询的比较条件。比如查询最大商品 最贵商品</p><p>select goods,goodsname from tablename where goods ＝(select max (goods) from tablename)</p><p>如果where列＝SQL内嵌 这内嵌SQL返回必是单列 单个值</p><p>如果where列 in （内嵌SQL），则SQL只返回单列 可以多行</p><p><br></p><p>3.from查询<br></p><div class="image-package"><img name="DF461328-9EF0-4D99-8956-C0D571CA2BD4.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-3419e40432917c9d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-3419e40432917c9d.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-3419e40432917c9d.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p>内层SQL的查询结果，当成一张临时表，供外层SQL，再次查询<br></p><div class="image-package"><img name="00736135-52F4-4FC8-BE1F-CCD26A3666AF.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-38ce7f7ea62e0f0d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-38ce7f7ea62e0f0d.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-38ce7f7ea62e0f0d.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p>4.exists 子查询</p><p>把外层的查询结果拿到内层，看内层的查询是否成立。 例如查询商品的栏目<br></p><div class="image-package"><img name="28B3FE30-AD25-4D08-8E56-3234344A6293.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-5894fd5bf9ccf734.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-5894fd5bf9ccf734.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-5894fd5bf9ccf734.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p>5.为什么建标时，加not null default ''/default 0</p><p>不想让表中出现null null是一种类型 比较时只能用Is null  Is not null 碰到运算符一律返回null 效率不高</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

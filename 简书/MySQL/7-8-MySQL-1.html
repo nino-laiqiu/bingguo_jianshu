@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.8 MySQL-1</title>
+    <style type="text/css" media="all">
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #777;
+        background-color: white;
+      }
+      .container {
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .post {
+        font-family: Georgia, "Times New Roman", Times, "SimSun", serif;
+        position: relative;
+        padding: 70px;
+        bottom: 0;
+        overflow-y: auto;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #515151;
+      }
+
+      .post h1{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 40px;
+        color: inherit;
+      }
+
+      .post p {
+        margin: 0 0 35px 0;
+      }
+
+      .post img {
+        border: 1px solid #D9D9D9;
+      }
+
+      .post a {
+        color: #28A1C5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <h1 class="title">7.8 MySQL-1</h1>
+        <div class="show-content">
+          <p>1.数据库服务器是不是MySQL?</p><p>对于数据库存储数据来说，国际上有mysql标准.很多软件开发商遵循SQL标准来开发一套软件，用来储存和管理数据，这套软件就可以称为数据库管理系统。</p><p>2.命令行黑窗口和mySQL服务器是什么关系？</p><p>客户端（client）和服务端（server）的关系就好像你的浏览器和163网站的服务器的关系一样</p><p>3.入门语句</p><p>连接# mysql -u username -ppassword</p><p>查看库#show databases</p><p>使用库#use databasename</p><p>查看表#show tables</p><p>创建库#create database 数据库名（charset 字符集）</p><p>删除数据库#drop database databasename</p><p>简单的建表语句#create table 表名（）</p><p>删除表# drop table 表名</p><p>给表改名#rename table 旧表名 to 新表名</p><p>清空表中数据#truncate 表名（truncate相当于重新建立一张新表 delete则是删除数据）</p><p>查看表中数据#select * from 表名</p><p>表中数据乱码#set names gbk/utf8</p><p>4.表的语法</p><p>增#insert into tablename() value()</p><div class="image-package">
+<img name="D246FE06-DDE4-42DD-9DE3-AEDDDEF13360.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-b3b80bf0f23d6d68.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-b3b80bf0f23d6d68.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-b3b80bf0f23d6d68.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div>
+</div><p><br></p><p>增#insert into tablename() values (),()</p><div class="image-package">
+<img name="6C2C762B-58BF-415C-8011-881FA45A1F9E.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-3204a35d64dd4159.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-3204a35d64dd4159.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-3204a35d64dd4159.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div>
+</div><p>改#改哪张表 改哪几列 改成什么值 在哪些行生效</p><p>update name</p><p>set ..＝..</p><p>where expression (#只要表达式为真则发挥作用）（where 1 1为真全改）</p><p><b>删#</b>删除整行，不存在删除某几列数据</p><p>delete from tablename where salary＞800把salary大于800的删除</p><div class="image-package">
+<img name="56C527F2-9EE0-4138-B259-F5F134DB39A4.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-0e612b32cc81f83c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-0e612b32cc81f83c.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-0e612b32cc81f83c.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div>
+</div><p>delete from tablename#删除表的数据</p><p>查询#要素</p><p>查哪张表的数据 查哪些列 哪些行</p><p>select id from tablename where</p><p>select * from tablename (*代表所有列 表名后不加where条件 则选所有行）</p><p>select id,name from tablename where 1（where 表达式）</p><p>#增删改查</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

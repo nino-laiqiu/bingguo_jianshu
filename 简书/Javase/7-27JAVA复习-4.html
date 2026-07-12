@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.27JAVA复习-4</title>
+    <style type="text/css" media="all">
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #777;
+        background-color: white;
+      }
+      .container {
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .post {
+        font-family: Georgia, "Times New Roman", Times, "SimSun", serif;
+        position: relative;
+        padding: 70px;
+        bottom: 0;
+        overflow-y: auto;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #515151;
+      }
+
+      .post h1{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 40px;
+        color: inherit;
+      }
+
+      .post p {
+        margin: 0 0 35px 0;
+      }
+
+      .post img {
+        border: 1px solid #D9D9D9;
+      }
+
+      .post a {
+        color: #28A1C5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <h1 class="title">7.27JAVA复习-4</h1>
+        <div class="show-content">
+          <p>1.顺序结构</p><p>代码从上往下依次执行</p><p>2.选择结构</p><p><b><i>if</i></b></p><p></p><p>第一种形式 if格式</p><p>格式  if(){}</p><p><b>执行流程</b></p><p> 首先判断关系表达式看其结果是true还是false</p><p>如果是true就执行语句体</p><p>如果是false就不执行语句体</p><p><b><i>大括号省略的情况 :  if语句中的大括号是可以省略的,如果省略,n那么值控制到第一个分号结束</i></b></p><p><i>第二种形式  if(){}else</i></p><p><i>第三种形 if式 if(){} else if(){} else</i></p><p><b><i>switch</i></b></p><p><i>switch(表达式) {<br></i></p><p>               		case 常量值1：</p><p>                            语句体1;</p><p>                            break;</p><p>                       case 常量值2：</p><p>                            语句体2;</p><p>                            break;</p><p><b>执行流程</b></p><p>1. 首先计算出表达式的值</p><p>		2. 其次，和case依次比较，一旦有对应的值，就会执行相应的语句，在执行的过程中，遇到break就会结束。</p><p>		3. 最后，如果所有的case都和表达式的值不匹配，就会执行default语句体部分，然后程序结束掉。</p><p><br></p><p><br></p><p><b>注意事项</b></p><p>		**1.**       **case后面只能跟常量,不能跟变量**</p><p>		**2.**       **多个case**后面的常量值不能相同</p><p>		**3.**       **case**的顺序有要求么?  没有,可以放到任意位置</p><p>		**4.**       **default**一定放在最后么?     **也不是,**可以放到任意位置</p><p>		**5.**       **default** **可以省略么?**  **可以**</p><p>		**6.**       **break**是否可以省略,可以省略,如果省略的话,代码会继续向下执行,不管下面的case是否匹配成功,一直执行到再次遇到break,或者是执行到了switch语句结束</p><p>		**7.**       **switch**语句何时结束: **遇到break,** 或者代码执行到了switch语句的最后</p><p>例子:实现一个计算器，从键盘录入第一个数，运算的符号(+-*除;取余 )，第二个数执行结果</p><p><br></p><p>循环结构</p><p><b>for循环</b></p><p>语法格式</p><p>for(初始化语句;判断条件语句;控制条件语句) {</p><p>         循环体语句体};</p><p><br></p><p>执行流程</p><p> A:执行初始化语句</p><p> B:执行判断条件语句，看其结果是true还是false</p><p>       		如果是false，循环结束。</p><p>      		 如果是true，继续执行。</p><p>	C:执行循环体语句</p><p>	D:执行控制条件语句</p><p>	E:回到B继</p><p><br></p><p><b>while循环</b></p><p><b>**格式:**<br></b></p><p>初始化语句</p><p> while(判断条件语句) {</p><p>         循环体语句体;</p><p>         控制条件语句;}</p><p><br></p><p></p><p><br></p><p></p><p>       </p><p></p><p></p><p></p><p></p><p></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.10MySQL-3</title>
+    <style type="text/css" media="all">
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #777;
+        background-color: white;
+      }
+      .container {
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .post {
+        font-family: Georgia, "Times New Roman", Times, "SimSun", serif;
+        position: relative;
+        padding: 70px;
+        bottom: 0;
+        overflow-y: auto;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #515151;
+      }
+
+      .post h1{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 40px;
+        color: inherit;
+      }
+
+      .post p {
+        margin: 0 0 35px 0;
+      }
+
+      .post img {
+        border: 1px solid #D9D9D9;
+      }
+
+      .post a {
+        color: #28A1C5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <h1 class="title">7.10MySQL-3</h1>
+        <div class="show-content">
+          <p>1.MySQL查询语句（比较运算符 逻辑运算符 模糊查询）</p><p>＜＞（！＝）#不等于</p><p>In #或  Between..and..#在之间 （区别in是离散 between是连续）</p><p>not#非  not in ()不在</p><p>or#或</p><p>and#与  or满足一边条件 and满足两边条件  </p><p>and or的优先级问题</p><p>模糊查询# like ％      _可匹配任意单个字符</p><p>select id,name from tablename where id like  '  ％'</p><p><br></p><p>2.MySQL的查询模型</p><p>select 变量</p><p>from 表名</p><p>where  表达式</p><p>3.group分组与统计函数</p><p>min max sum avg </p><p>count (*)查询行数的绝对值<br></p><div class="image-package"><img name="9EB2BAE6-53DB-4DA8-843F-C91623AA0205.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-fb1904d650d62c8c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-fb1904d650d62c8c.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-fb1904d650d62c8c.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><div class="image-package"><img name="CFAB91ED-9B00-42D3-A194-EC950D0445E7.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-38205318e035af5e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-38205318e035af5e.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-38205318e035af5e.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p>select id avg (number) from tablename where group by id</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

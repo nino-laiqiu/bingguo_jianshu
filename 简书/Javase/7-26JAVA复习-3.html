@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.26JAVA复习-3</title>
+    <style type="text/css" media="all">
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #777;
+        background-color: white;
+      }
+      .container {
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .post {
+        font-family: Georgia, "Times New Roman", Times, "SimSun", serif;
+        position: relative;
+        padding: 70px;
+        bottom: 0;
+        overflow-y: auto;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #515151;
+      }
+
+      .post h1{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 40px;
+        color: inherit;
+      }
+
+      .post p {
+        margin: 0 0 35px 0;
+      }
+
+      .post img {
+        border: 1px solid #D9D9D9;
+      }
+
+      .post a {
+        color: #28A1C5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <h1 class="title">7.26JAVA复习-3</h1>
+        <div class="show-content">
+          <p>1.算数运算符</p><p><b>前++ 后++在运算时的区别</b></p><p>2.赋值运算符</p><p>3.关系运算符</p><p>比较运算符的结果都是boolean类型,也就是说,要不是true,要不是false</p><p> - ==:判断左右两边是否相等</p><p>    - 注意事项:千万不能写成 = ,他们两个没有任何联系</p><p> - != :判断左右两边是否不相等</p><p>    - 如果左右两边相同,返回false</p><p>    - 如果左右两边不同,返回true</p><p>- &lt;或者&lt;= :判断左边是否小于等于右边</p><p>  - 如果左边小于右边,那么返回值为true</p><p>  - 如果左边大于右边,那么返回值为false</p><p>- \&gt; 或者\&gt;=:判断左边是否大于等于右边</p><p>  - 如果左边大于右边,那么返回值为true</p><p>  - 如果左边小于右边,那么返回值为false</p><p><b>- instanceof :检查是否</b></p><p>4.逻辑运算符</p><p>&amp;:与符号(and)</p><p>    - 两边都是true,结果才为true,只要&amp;两边出现一个false,那么结果就位false</p><p> | :或符号(or)</p><p>    - 两边都是false,结果才是false,两天只要有一个为true,那么结果就是true</p><p>- ^ :异或符号(xor)</p><p>    - ^符号  两边boolean值相同的情况下,结果为false</p><p>      两边boolean值不同的情况下,结果为true</p><p> ! :非符号(not)</p><p>    - !true表示false</p><p>    - !false表示true</p><p> &amp;&amp; :双与或者叫做短路与(and)</p><p>    - 两边都是true,结果才为true</p><p> - || :双或或者叫做短路或(or)</p><p>   - 两边都为false,结果才为false</p><p><b>短路时某一侧不执行,在java中不支持 3&gt;x &gt;1这种写法,这种写法java是不能解析的</b>,<b>所以针对上面情况,我们应该将表达式修改为3 &gt; x &amp;&amp; x &gt; 1,</b></p><p><br></p><p><br></p><p>5.位运算符</p><p>%对于正数来说，其原、反、补码都是相同的，都是该数据的二进制形式.</p><p>%负数的右移(例如-5&gt;&gt;2)</p><p>原码 1000 …… 0101</p><p>反码 1111   …… 1010 负数的反码是保留符号位不变源码取反</p><p>补码 1111   …… 1011 补码是反码加1</p><p>&gt;&gt;2 (负数右移高位补1)</p><p>补码 1111   …… 1110</p><p>反码 1111   …… 1101 补码转反码减1</p><p>源码 1000 … 0010 负数反码转源码保留符号位不变取反</p><p>= -2</p><p>%有符号的左移</p><p>无论是有符号的正数还是负数，其左移都是在其补码的基础上面左移，而且低位都是补0</p><p>%无符号的右移</p><p>无论是正数还是负数，其无符号右移都是在其补码的基础上右移，高位补0</p><p>-5</p><p>原码 1000 …… 0101</p><p>反码 1111   …… 1010 负数的反码是保留符号位不变源码取反</p><p>补码 1111   …… 1011 补码是反码加1</p><p>&gt;&gt;&gt;2(无符号右移，高位补0)</p><p>补码 0011  …… 1110</p><p>反码 (此时符号位已经变为0了，系统会当成正数来处理，原反补码均一样)</p><p>原码 0011  …… 1110</p><p><br></p><p>6.键盘输入</p><p>想要使用键盘录入  必须得使用一个类:Scanner类</p><p><br></p><p>7.idea快捷键</p><p>ctrl + alt + L   自动整理代码</p><p>ctrl + alt + o   自动导包  删包</p><p>alt + enter</p><p>ctrl + alt + v  自动生成返回值</p><p>ctrl + alt + T  生成代码判断的  例如  if  try..catch</p><p>ALT + INSERT：生成get/set 实现接口等</p><p>ctrl + d 快速复制一行代码</p><p>ctrl + x  删除一行代码</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

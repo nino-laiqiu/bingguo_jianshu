@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.11MySQL-4</title>
+    <style type="text/css" media="all">
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #777;
+        background-color: white;
+      }
+      .container {
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .post {
+        font-family: Georgia, "Times New Roman", Times, "SimSun", serif;
+        position: relative;
+        padding: 70px;
+        bottom: 0;
+        overflow-y: auto;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #515151;
+      }
+
+      .post h1{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 40px;
+        color: inherit;
+      }
+
+      .post p {
+        margin: 0 0 35px 0;
+      }
+
+      .post img {
+        border: 1px solid #D9D9D9;
+      }
+
+      .post a {
+        color: #28A1C5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <h1 class="title">7.11MySQL-4</h1>
+        <div class="show-content">
+          <p>1.having筛选</p><p><br></p><div class="image-package"><img name="36261C02-80CC-435E-8A0C-EDAD4F269489.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-ceb34e158b4072e7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-ceb34e158b4072e7.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-ceb34e158b4072e7.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p>select id,salary，(id-salary) as good_d</p><p>from tablename</p><p>Where good_d＜5   这种书写是错误的（where good_d＜5  where对满足条件情况下产生结果 having对结果产生筛选）<br></p><div class="image-package"><img name="FE51741F-2441-46CF-9A94-F6057E96C54D.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-81f2654cd2aa9fe4.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-81f2654cd2aa9fe4.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-81f2654cd2aa9fe4.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p><br></p><div class="image-package"><img name="0198F21E-B7DE-48AE-8865-F97FC470D20F.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-5b9da0d703a7d0a2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-5b9da0d703a7d0a2.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-5b9da0d703a7d0a2.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p>group 和having连用</p><p>where group having 连用</p><p>count sum 的运用</p><p><br></p><p>2.order by  limit的应用</p><p>order by  结果集中的列名 desc/asc在最终结果集出来后 可以进行排序 </p><p>多字段排序 order by,order by 优先级</p><p><br></p><p>limit (  ,  ) 偏移量 截取几位</p><p><br></p><div class="image-package"><img name="53FB0BFF-3086-4A50-8B60-204725946B03.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-b95a5a2f7672c7c1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-b95a5a2f7672c7c1.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-b95a5a2f7672c7c1.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

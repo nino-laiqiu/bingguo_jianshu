@@ -1,0 +1,11 @@
+##全面拥抱Spark技术
+未来Kylin将全面从MapReduce转向Spark技术栈，包括数据源、构建引擎、存储和查询引擎等多个层次
+##实时流分析
+Apache Kylin社区正在积极研发第三代流式构建技术。力求在Cube的基础上再添加实时节点，将最后几分钟的数据缓存在内存中。将实时节点联合Cube的内容能构成实时查询的Lambda架构，实现通过一个SQL接口同时查询历史和实时数据，真正做到秒级别延迟的实时大数据分析。
+##更快的存储和查询
+当前的存储引擎HBase有着比较明显的短板（单索引，对Rowkey的设计要求高），架构复杂、运维难，因此Apache Kylin社区也在探索其他更快的储存技术，比如Druid或Parquet，甚至有人建议使用Cassandra或ElasticSearch，应用这些存储技术后的只读性能会成倍于HBase。因此，在HBase之外支持其他更快速的储存引擎也是一个重要的发展方向。Apache Kylin社区已经实现了Kylin on Druid和Kylinon Parquet的可选方案，期待在未来的某个版本正式发布。(当前最新版本已经实现了)
+##前端展现及与BI工具的整合
+有了高速OLAP引擎之后，用户很自然地会希望有相应的前端可视化。目前这是Kylin的技术空白。通过JDBC/ODBC接口，Kylin可以和不少开源OLAP前端集成，比如Saiku、Superset、Zeppelin、Redash等，但使用起来需要额外进行安装和配置，不是很便捷。
+##高级OLAP函数
+Apache Kylin支持标准SQL，但对于高级OLAP函数还缺乏完整的支持，特别是一些不太常用的函数
+

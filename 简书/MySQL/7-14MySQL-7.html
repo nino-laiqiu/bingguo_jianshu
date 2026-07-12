@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.14MySQL-7</title>
+    <style type="text/css" media="all">
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #777;
+        background-color: white;
+      }
+      .container {
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .post {
+        font-family: Georgia, "Times New Roman", Times, "SimSun", serif;
+        position: relative;
+        padding: 70px;
+        bottom: 0;
+        overflow-y: auto;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #515151;
+      }
+
+      .post h1{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 40px;
+        color: inherit;
+      }
+
+      .post p {
+        margin: 0 0 35px 0;
+      }
+
+      .post img {
+        border: 1px solid #D9D9D9;
+      }
+
+      .post a {
+        color: #28A1C5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <h1 class="title">7.14MySQL-7</h1>
+        <div class="show-content">
+          <p>1.数学函数与字符串</p><p>2.视图view</p><p>表的数据变化影响视图变化</p><p>视图不占据空间</p><p>create view v1 as select.....</p><p><br></p><p>3.临时表，内存表，视图<br></p><p>4.乱码<br></p><p><br></p><div class="image-package"><img name="AA60A1EC-0332-439B-9C40-EF9E57C9A1C0.jpg" src="http://upload-images.jianshu.io/upload_images/9049859-0311644e52031bdd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/9049859-0311644e52031bdd.jpg" data-src="//upload-images.jianshu.io/upload_images/9049859-0311644e52031bdd.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1240"><br><div class="image-caption" contenteditable="false"></div></div><p>5.查询有两门及两门以上不及格成绩的 学生的平均成绩</p><p>整体思路：</p><p>第一步查看所有人的平均分；</p><p>select name,avg(score) from result group by name;</p><p>第二步再计算出每个人挂科情况；</p><p>select name,subject,score, score&lt;60 as g from result;</p><p>挂科数就是g的综合，即sum(score&lt;60)</p><p><br></p><p>第三部综合上面两个语句</p><p>select name,avg(score),sum(score&lt;60) as gks from result group by name having gks;</p><p>最后筛选挂科数目大于等于2的人：</p><p>select name,avg(score),sum(score&lt;60) as gks from result group by name having gks&gt;=2;</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
